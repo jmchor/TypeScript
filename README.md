@@ -13,6 +13,7 @@ I'll take anything I can find on the web. Twitter, newsletters, podcasts, what h
 But among more structured items are
 
 - _Learning TypeScript_ by John Goldberg
+- Accompanied by the projects repo of Learning TypeScript https://github.com/LearningTypeScript/projects
 - [TotalTypescript](https://www.totaltypescript.com/tutorials) by [Matt Pocock](https://github.com/mattpocock) (they have free tutorials!)
 - Literally **any** episode of SyntaxFM talking about TypeScript
 
