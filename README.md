@@ -4,14 +4,16 @@ This repo is my TypeScript Playground for learning TypeScript - a seemingly rand
 
 ## Structure
 
+I'll try to organize the code by origin, e.g. by tutorial, textbook, etc.
+
 ### Learning Materials
 
-At this point, there isn't really any structure. For learning materials, I'll take anything I can find on the web.
+I'll take anything I can find on the web. Twitter, newsletters, podcasts, what have you.
 
 But among more structured items are
 
 - _Learning TypeScript_ by John Goldberg
-- [TotalTypescript](https://www.totaltypescript.com/tutorials) by [Matt Pocock](https://github.com/mattpocock)
+- [TotalTypescript](https://www.totaltypescript.com/tutorials) by [Matt Pocock](https://github.com/mattpocock) (they have free tutorials!)
 - Literally **any** episode of SyntaxFM talking about TypeScript
 
 ### Documentation & Exercise
