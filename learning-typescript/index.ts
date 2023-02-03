@@ -27,3 +27,39 @@ if (scientist === 'Rosalind Franklin') {
 }
 
 // scientist.toUpperCase() string method toUpperCase doesn't exist on string | number
+
+let researcher = Math.random() > 0.5 ? 'Rosalind Franklin' : 51;
+
+if (typeof researcher === 'string') {
+	researcher.toUpperCase(); // Ok: string
+}
+
+if (!(typeof researcher === 'string')) {
+	researcher.toFixed();
+} else {
+	researcher.toUpperCase();
+} //explore both cases between string | number type
+
+// Literal Types
+
+const philosopher = 'Hypatia';
+
+// initializing a variable using const will assign the initial value as the literal type of this variable
+
+let lifespan: number | boolean | string | 'hangover';
+//all Union type annotations can mix between all literal and primitive types
+
+let specificallyAda: 'Ada'; //literally typed Ada
+
+specificallyAda = 'Ada'; // Ok
+
+specificallyAda = 'Byron'; //an initialized literal type can't be assigned another type
+
+let someString = ' '; // type string
+
+let smile: ':)';
+smile = ':)';
+
+someString = smile;
+
+//literal types are allowed to be assigned to their primitive types. ":)" as a literal type still is of type string
