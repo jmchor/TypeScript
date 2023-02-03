@@ -16,3 +16,14 @@ let admiral: number | string;
 admiral = 'Grace Hopper';
 admiral.toUpperCase();
 //admiral.toFixed() won't work anymore cause the variable was narrowed to be of type string
+
+//Conditional checks
+
+let scientist = Math.random() > 0.5 ? 'Rosalind Franklin' : 51;
+
+if (scientist === 'Rosalind Franklin') {
+	//Type of scientist in this condition is string
+	scientist.toUpperCase();
+}
+
+// scientist.toUpperCase() string method toUpperCase doesn't exist on string | number
