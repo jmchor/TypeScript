@@ -1,7 +1,7 @@
 // Union Types
 // "Either-Or-Type" for variables that can belong to more than one type
 
-const mathematician: string | undefined = Math.random() > 0.5 ? undefined : 'Mark Wahlberg';
+// const mathematician: string | undefined = Math.random() > 0.5 ? undefined : 'Mark Wahlberg';
 
 const physicist: string | number = Math.random() > 0.5 ? 'Marie Curie' : 84;
 
@@ -44,7 +44,7 @@ if (!(typeof researcher === 'string')) {
 
 const philosopher = 'Hypatia';
 
-// initializing a variable using const will assign the initial value as the literal type of this variable
+// initializing a variable using const will assign the initial value as the literal type of this variable; meaning it can be typed without the ":type" annotation
 
 let lifespan: number | boolean | string | 'hangover';
 //all Union type annotations can mix between all literal and primitive types
@@ -63,3 +63,29 @@ smile = ':)';
 someString = smile;
 
 //literal types are allowed to be assigned to their primitive types. ":)" as a literal type still is of type string
+
+//Strict null checking
+
+let nameMaybe = Math.random() > 0.5 ? 'Tony Hoare' : undefined;
+
+nameMaybe.toLowerCase();
+
+//Truthiness narrowing - narrowing according to a variable evaluating to truthy in a Boolean context
+
+let geneticist = Math.random() > 0.5 ? 'Barbara McClintock' : undefined;
+
+if (geneticist) {
+	geneticist.toUpperCase(); // Ok: string
+}
+
+geneticist.toUpperCase();
+
+let mathematician: string;
+
+mathematician?.length;
+
+//Type aliases
+
+type TypeAlias = boolean | string | object; //basically works like a Partial in hbs
+
+const someData: TypeAlias = { job: geneticist };
