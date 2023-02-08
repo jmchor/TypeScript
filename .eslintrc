@@ -1,7 +1,7 @@
 {
 	"parser": "@typescript-eslint/parser",
 
-	"plugins": ["@typescript-eslint"],
+	"plugins": ["@typescript-eslint", "typescript-sort-keys"],
 
 	"overrides": [
 		{
@@ -10,28 +10,23 @@
 			// As mentioned in the comments, you should extend TypeScript plugins here,
 			// instead of extending them outside the `overrides`.
 			// If you don't want to extend any rules, you don't need an `extends` attribute.
-			"extends": ["wesbos/typescript", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+			"extends": [
+				"wesbos/typescript",
+				"eslint:recommended",
+				"plugin:@typescript-eslint/recommended",
+				"plugin:eslint-comments/recommended",
+				"plugin:@typescript-eslint/recommended-requiring-type-checking",
+				"plugin:@typescript-eslint/strict",
+				"prettier"
+			],
 
 			"parserOptions": {
-				"project": ["./TypeScript-Playground/tsconfig.json"], // Specify it only for TypeScript files
+				"project": ["./tsconfig.json"], // Specify it only for TypeScript files
 				"ecmaVersion": "latest",
 				"sourceType": "module"
 			},
 			"rules": {
-				"no-unused-vars": "off",
-				"@typescript-eslint/no-unused-vars": "off",
-				"no-console": 0,
-				"prettier/prettier": [
-					"error",
-
-					{
-						"trailingComma": "es5",
-						"singleQuote": true,
-						"printWidth": 120,
-						"useTabs": true,
-						"tabWidth": 8
-					}
-				]
+				"no-console": 0
 			}
 		}
 	]
