@@ -14,3 +14,5 @@ function anotherFunction(param1: string, param2?: string) {
 }
 
 anotherFunction('hello'); //works fine
+
+//default parameters
