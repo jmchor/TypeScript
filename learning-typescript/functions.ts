@@ -24,3 +24,9 @@ function yetAnotherFunction(param1: number, param2 = 1) {
 //param2 is optional and has a default value of 1, meaning it's assigned type is number | undefined
 
 yetAnotherFunction(1, 2);
+
+
+// rest parameters using the spread operator can be typed with the array syntax
+
+restParamFunction(param1: string, ...params: string[]) {
+	return param1 + params[0] + params[1]; }
