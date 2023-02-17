@@ -25,8 +25,8 @@ function yetAnotherFunction(param1: number, param2 = 1) {
 
 yetAnotherFunction(1, 2);
 
-
 // rest parameters using the spread operator can be typed with the array syntax
 
-restParamFunction(param1: string, ...params: string[]) {
-	return param1 + params[0] + params[1]; }
+function restParamFunction(param1: string, ...params: string[]) {
+	return param1 + params[0] + params[1];
+}
