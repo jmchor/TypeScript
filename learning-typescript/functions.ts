@@ -30,3 +30,15 @@ yetAnotherFunction(1, 2);
 function restParamFunction(param1: string, ...params: string[]) {
 	return param1 + params[0] + params[1];
 }
+
+//TypeScript infers the return type of a function based on the return statements in the function body
+//if a function returns multiple types, the return type is inferred as the union of those types
+
+function returnTypesFunction(param1: string, param2: number) {
+	if (param1 === 'hello') {
+		return param1;
+	} else {
+		return param2;
+	}
+}
+// here, the return type is a union of number and a literal type of 'hello', which is inferred as string
