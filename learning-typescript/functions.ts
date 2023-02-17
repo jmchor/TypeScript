@@ -16,3 +16,11 @@ function anotherFunction(param1: string, param2?: string) {
 anotherFunction('hello'); //works fine
 
 //default parameters
+
+function yetAnotherFunction(param1: number, param2 = 1) {
+	return param1 + param2;
+}
+
+//param2 is optional and has a default value of 1, meaning it's assigned type is number | undefined
+
+yetAnotherFunction(1, 2);
