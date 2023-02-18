@@ -54,3 +54,8 @@ let returnFunctionThatReturnsString: (()=> string | undefined)
 
 //typed as function that returns a function or undefined
 
+//TypeScript infers parameter types, if the location to which the parameters are provided has a declared type
+
+let example: (param1:string) => string
+
+//any parameter in the location of param1 will be typed as string
