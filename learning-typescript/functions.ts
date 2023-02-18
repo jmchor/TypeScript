@@ -42,3 +42,15 @@ function returnTypesFunction(param1: string, param2: number) {
 	}
 }
 // here, the return type is a union of number and a literal type of 'hello', which is inferred as string
+
+
+//Placement of parentheses either shows the type of a function as returning a union of types
+
+let returnString: () => string | undefined
+
+//typed as function which returns either string or undefined; or:
+
+let returnFunctionThatReturnsString: (()=> string | undefined)
+
+//typed as function that returns a function or undefined
+
