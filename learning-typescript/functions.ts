@@ -59,3 +59,15 @@ let returnFunctionThatReturnsString: (()=> string | undefined)
 let example: (param1:string) => string
 
 //any parameter in the location of param1 will be typed as string
+
+//Function type aliases can be used to create a type for a function
+
+type FunctionType = (param1: string) => string
+
+let exampleFunction: FunctionType
+
+// Function type aliases can be used for the parameters of a function as well
+
+type FunctionType2 = (param1: FunctionType) => string
+
+let exampleFunction2: FunctionType2
