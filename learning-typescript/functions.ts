@@ -15,6 +15,9 @@ function anotherFunction(param1: string, param2?: string) {
 
 anotherFunction('hello'); //works fine
 
+/* ---------------------------------------------------------------------------------------------- */
+
+
 //default parameters
 
 function yetAnotherFunction(param1: number, param2 = 1) {
@@ -29,8 +32,6 @@ yetAnotherFunction(1, 2);
 
 function restParamFunction(param1: string, ...params: string[]) {
 	return param1 + params[0] + params[1];
-
-
 }
 
 
