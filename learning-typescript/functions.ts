@@ -5,7 +5,7 @@ function someFunction(param1: string, param2: number) {
 }
 
 someFunction('hello', 1); //works fine
-someFunction('hello'); //throws type error
+// someFunction('hello'); //throws type error
 
 //Adding the ? before the type annotation makes a parameter optional
 
@@ -71,3 +71,19 @@ let exampleFunction: FunctionType
 type FunctionType2 = (param1: FunctionType) => string
 
 let exampleFunction2: FunctionType2
+
+//void and never
+
+//void is the return type of a function that doesn't return anything
+
+//void means the return type of a function will be ignored and is NOT the same as undefined
+
+//void is for functions that return either nothing or for which the return type is ignored, like
+
+let arrayOne: string[] = ['hello', 'world']
+let arrayTwo: string[] = []
+
+
+arrayOne.forEach(elem => arrayTwo.push(elem))
+
+//the return type of forEach is void, because the return type is ignored
